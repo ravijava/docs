@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var i = 0
+$(document).ready(function(){
+    $("#addForm").click(function(){
+   	 	var childDiv = document.getElementById("child").innerHTML
+        var divchild ="<input type=\"text\" name=\"uname\"/><br/><br/><input type=\"password\" name=\"pwd\"/><br/><br/>"
+    	$('#main').append(divchild);
+        
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="main"></div>
+
+<div id="child">
+  <input type="text" name="uname"/><br/><br/>
+  <input type="password"name="pwd"/><br/><br/>
+</div>
+
+
+<button id="addForm">Add Form</button>
+</body>
+</html>
